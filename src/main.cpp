@@ -2,6 +2,7 @@
 	partial credit to orlando for providing some function in this code
 	https://github.com/dehoisted
 */
+
 #define _CRT_SECURE_NO_WARNINGS
 
 
